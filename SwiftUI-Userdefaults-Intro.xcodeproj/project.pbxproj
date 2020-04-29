@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		0E0E8D1E2459BDD300868298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D1D2459BDD300868298 /* AppDelegate.swift */; };
 		0E0E8D202459BDD300868298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D1F2459BDD300868298 /* SceneDelegate.swift */; };
-		0E0E8D222459BDD300868298 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D212459BDD300868298 /* ContentView.swift */; };
+		0E0E8D222459BDD300868298 /* LaunchNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D212459BDD300868298 /* LaunchNumberView.swift */; };
 		0E0E8D242459BDD500868298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E8D232459BDD500868298 /* Assets.xcassets */; };
 		0E0E8D272459BDD500868298 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E8D262459BDD500868298 /* Preview Assets.xcassets */; };
 		0E0E8D2A2459BDD500868298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E8D282459BDD500868298 /* LaunchScreen.storyboard */; };
+		0E0E8D322459CCE400868298 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D312459CCE400868298 /* UserDefaultsExtension.swift */; };
+		0E0E8D342459CDC700868298 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D332459CDC700868298 /* PreferencesView.swift */; };
+		0E0E8D362459CF2F00868298 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D352459CF2F00868298 /* SettingsStore.swift */; };
+		0E0E8D3A2459D01200868298 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8D392459D01200868298 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E0E8D1A2459BDD300868298 /* SwiftUI-Userdefaults-Intro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Userdefaults-Intro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0E8D1D2459BDD300868298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E0E8D1F2459BDD300868298 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E0E8D212459BDD300868298 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E0E8D212459BDD300868298 /* LaunchNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNumberView.swift; sourceTree = "<group>"; };
 		0E0E8D232459BDD500868298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E0E8D262459BDD500868298 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E0E8D292459BDD500868298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E0E8D2B2459BDD500868298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E0E8D312459CCE400868298 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		0E0E8D332459CDC700868298 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		0E0E8D352459CF2F00868298 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		0E0E8D392459D01200868298 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		0E0E8D1C2459BDD300868298 /* SwiftUI-Userdefaults-Intro */ = {
 			isa = PBXGroup;
 			children = (
+				0E0E8D382459CFF600868298 /* Data */,
+				0E0E8D372459CFD700868298 /* UI */,
 				0E0E8D1D2459BDD300868298 /* AppDelegate.swift */,
 				0E0E8D1F2459BDD300868298 /* SceneDelegate.swift */,
-				0E0E8D212459BDD300868298 /* ContentView.swift */,
 				0E0E8D232459BDD500868298 /* Assets.xcassets */,
 				0E0E8D282459BDD500868298 /* LaunchScreen.storyboard */,
 				0E0E8D2B2459BDD500868298 /* Info.plist */,
@@ -73,6 +82,25 @@
 				0E0E8D262459BDD500868298 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E0E8D372459CFD700868298 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E8D212459BDD300868298 /* LaunchNumberView.swift */,
+				0E0E8D332459CDC700868298 /* PreferencesView.swift */,
+				0E0E8D392459D01200868298 /* MainView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0E0E8D382459CFF600868298 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E8D312459CCE400868298 /* UserDefaultsExtension.swift */,
+				0E0E8D352459CF2F00868298 /* SettingsStore.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0E8D342459CDC700868298 /* PreferencesView.swift in Sources */,
+				0E0E8D3A2459D01200868298 /* MainView.swift in Sources */,
 				0E0E8D1E2459BDD300868298 /* AppDelegate.swift in Sources */,
 				0E0E8D202459BDD300868298 /* SceneDelegate.swift in Sources */,
-				0E0E8D222459BDD300868298 /* ContentView.swift in Sources */,
+				0E0E8D322459CCE400868298 /* UserDefaultsExtension.swift in Sources */,
+				0E0E8D362459CF2F00868298 /* SettingsStore.swift in Sources */,
+				0E0E8D222459BDD300868298 /* LaunchNumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
