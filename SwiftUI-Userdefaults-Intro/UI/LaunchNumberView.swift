@@ -15,7 +15,15 @@ struct LaunchNumberView: View {
     @ObservedObject var settingsStore: SettingsStore
     
     var body: some View {
-        Text("\(self.settingsStore.userName) launched \(self.launchNumber) times")
+        ZStack{
+            Color(UIColor(named: self.settingsStore.color) ??  UIColor.white).edgesIgnoringSafeArea(.all)
+            VStack {
+                if self.launchNumber == 1 {
+                    Text("First Launch")
+                }
+                Text("\(self.settingsStore.userName) launched \(self.launchNumber) times")
+            }
+        }
     }
 }
 

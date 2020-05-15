@@ -8,32 +8,32 @@
 
 import Foundation
 
-@propertyWrapper
-struct UserDefault<T> {
-    let key: String
-    let defaultValue: T
-    
-    var wrappedValue: T {
-        get {
-            return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
-        }
-        set {
-            UserDefaults.standard.set(newValue, forKey: key)
-        }
-    }
-}
+//@propertyWrapper
+//struct UserDefault<T> {
+//    let key: String
+//    let defaultValue: T
+//
+//    var wrappedValue: T {
+//        get {
+//            return UserDefaults.standard.object(forKey: key) as? T ?? defaultValue
+//        }
+//        set {
+//            UserDefaults.standard.set(newValue, forKey: key)
+//        }
+//    }
+//}
 
 extension UserDefaults{
     enum Keys: String {
-        case launchNumber, userName
+        case launchNumber, userName, color
     }
 }
 
 extension UserDefaults {
-    class func incrementIntegerForKey(key:String) {
+    class func incrementIntegerForKey(key: String) {
         let defaults = self.standard
         let int = defaults.integer(forKey: key)
-        defaults.set(int+1, forKey:key)
+        defaults.set(int + 1, forKey: key)
     }
     
     static var userName: String {
